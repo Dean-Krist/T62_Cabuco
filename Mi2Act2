@@ -1,0 +1,70 @@
+#include <iostream>
+using namespace std;
+
+  int main() {
+        int pick , payment, change;
+
+		cout << "Select Your Order" << endl << "[1] Pringles (P85)" << endl << "[2] Piatos (P30)" << endl << "[3] Lays (P75)" << endl<< "Choice: ";
+		cin >> pick;
+		
+
+		if (pick == 1 )
+		{
+			cout << "Input payment: ";
+			cin >> payment;
+
+			if (payment < 85)
+			{
+			cout << "Your payment is not enough." << endl;
+			}
+
+			else if (payment >= 85)
+			{
+			change = payment - 85;
+			cout << "You have ordered Pringles." << endl << "change: P" << change  <<endl;
+			}
+		}
+
+		else if (pick == 2 )
+		{
+			cout << "Input payment: ";
+			cin >> payment;
+
+			if (payment < 30)
+			{
+			cout << "Your payment is not enough." << endl;
+			}
+
+			else if (payment >= 30)
+			{
+			change = payment - 30;
+			cout << "You have ordered Piatos." << endl << "change: P" << change  <<endl;
+			} 
+		}
+
+		else if (pick == 3 )
+		{
+			cout << "Input payment: ";
+			cin >> payment;
+
+			if (payment < 75)
+			{
+			cout << "Your payment is not enough." << endl;
+			}
+
+			else if (payment >= 75)
+			{
+			change = payment - 75;
+			cout << "You have ordered Lays." << endl << "change: P" << change  <<endl;
+			}
+		}
+
+		else
+			{
+			cout << "Your input is invalid" << endl;
+			}
+
+		system("PAUSE");
+
+        return 0;
+    }
