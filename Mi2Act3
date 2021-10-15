@@ -3,7 +3,7 @@ using namespace std;
 
   int main() 
 {
-    int x, cycle = 1;
+    int x;
 
 	cout << "input any positive integers: ";
 	cin >> x;
@@ -23,7 +23,6 @@ using namespace std;
         }
         
 
-        ++cycle;
     }
 
 	system("PAUSE");
