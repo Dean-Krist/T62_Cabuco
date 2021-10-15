@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+  int main() 
+{
+    int x, cycle = 1;
+
+	cout << "input any positive integers: ";
+	cin >> x;
+
+    while (x != 1)
+	{
+        if (x % 2 == 0) 
+		{ 
+            x = x / 2;
+			cout << "The current Given value is " << x << endl;
+        }
+
+		else 
+		{ 
+            x = x * 3 + 1;
+			cout << "The current Given value is " << x << endl;
+        }
+        
+
+        ++cycle;
+    }
+
+	system("PAUSE");
+
+    return 0;
+
+  }
